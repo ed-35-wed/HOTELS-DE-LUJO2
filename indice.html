@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel de Lujo</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#hoteles">Hoteles</a></li>
+                <li><a href="#reservas">Reservas</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="inicio">
+            <h1>Bienvenido a nuestro hotel de lujo</h1>
+            <p>Disfruta de nuestra hospitalidad y servicios de alta calidad</p>
+        </section>
+        <section id="hoteles">
+            <h2>Nuestros hoteles</h2>
+            <ul>
+                <li>Hotel Plaza</li>
+                <li>Hotel Royal</li>
+                <li>Hotel Luxe</li>
+            </ul>
+        </section>
+        <section id="reservas">
+            <h2>Reservas</h2>
+            <form>
+                <label for="fecha-entrada">Fecha de entrada:</label>
+                <input type="date" id="fecha-entrada" name="fecha-entrada"><br><br>
+                <label for="fecha-salida">Fecha de salida:</label>
+                <input type="date" id="fecha-salida" name="fecha-salida"><br><br>
+                <label for="noches">Número de noches:</label>
+                <input type="number" id="noches" name="noches"><br><br>
+                <button id="btn-reserva">Realizar reserva</button>
+            </form>
+            <div id="mensaje-reserva"></div>
+        </section>
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <p>Para más información, contáctenos al:</p>
+            <p>Teléfono: 555-555-5555</p>
+            <p>Correo electrónico: <a href="mailto:info@hotelluxe.com">info@hotelluxe.com</a></p>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+CSS (en el archivo estilos.css)
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+section {
+    background-color: #f7f7f7;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    margin-bottom: 10px;
+}
+
+input[type="date"], input[type="number"] {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+#mensaje-reserva {
+    margin-top: 20px;
+    font-weight: bold;
+    color: #333;
+}

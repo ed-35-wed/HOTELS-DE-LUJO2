@@ -1,0 +1,141 @@
+/* Estilos generales */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+/* Estilos para la cabecera */
+
+.cabecera {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.cabecera h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+/* Estilos para la navegación */
+
+.navegacion {
+    background-color: #444;
+    padding: 10px;
+    text-align: center;
+}
+
+.navegacion ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navegacion li {
+    margin-right: 20px;
+}
+
+.navegacion a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.navegacion a:hover {
+    color: #ccc;
+}
+
+/* Estilos para la sección de reservas */
+
+.seccion-reservas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.seccion-reservas h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.seccion-reservas form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.seccion-reservas label {
+    margin-bottom: 10px;
+}
+
+.seccion-reservas input[type="date"], .seccion-reservas input[type="number"] {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.seccion-reservas button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.seccion-reservas button:hover {
+    background-color: #555;
+}
+
+/* Estilos para la sección de mensaje de reserva */
+
+.seccion-mensaje-reserva {
+    margin-top: 20px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Estilos para la sección de contacto */
+
+.seccion-contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.seccion-contacto h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.seccion-contacto p {
+    margin-bottom: 20px;
+}
+
+.seccion-contacto a {
+    color: #333;
+    text-decoration: none;
+}
+
+.seccion-contacto a:hover {
+    color: #555;
+}
